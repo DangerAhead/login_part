@@ -9,65 +9,60 @@
 
     <EditText
         android:id="@+id/phone"
-        android:inputType="phone"
         android:layout_width="235dp"
         android:layout_height="50dp"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/round_corners"
         android:ems="10"
         android:hint="phone no."
+        android:inputType="phone"
         android:paddingLeft="20dp"
         android:textColor="#155BC6"
         android:textColorHighlight="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <Button
         android:id="@+id/log__in"
         android:layout_width="209dp"
         android:layout_height="50dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/rounded_buttons"
         android:text="Log In"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
         android:id="@+id/log_in_otp"
         android:layout_width="151dp"
         android:layout_height="38dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/rounded_buttons"
         android:backgroundTintMode="multiply"
         android:text="Log In with OTP"
-        app:layout_constraintBottom_toTopOf="@+id/forgot_password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/log__in" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
         android:id="@+id/forgot_password"
         android:layout_width="151dp"
         android:layout_height="38dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="188dp"
         android:background="#24CA2B"
         android:text="Forgot Password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/log_in_otp" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="235dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="108dp"
         android:background="@drawable/round_corners"
         android:ems="10"
         android:hint="password"
@@ -75,20 +70,43 @@
         android:paddingLeft="20dp"
         android:textColor="#155BC6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone" />
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="233dp"
         android:layout_height="156dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="53dp"
-        app:layout_constraintBottom_toTopOf="@+id/phone"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ebhar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
